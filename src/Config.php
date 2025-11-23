@@ -108,7 +108,7 @@ class Config extends Collection
      *
      * @return mixed
      */
-    public function offsetGet($key)
+    public function offsetGet($key): mixed
     {
         return ArrayHelper::get($this->items, $key);
     }
